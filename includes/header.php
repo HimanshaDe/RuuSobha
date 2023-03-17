@@ -50,9 +50,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="booking-history.php">Booking History</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="invoice-history.php">Invoice History</a>
-                    </li>
+                    </li> -->
                                         <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>
