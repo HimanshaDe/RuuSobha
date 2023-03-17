@@ -12,7 +12,6 @@ mysqli_query($con,"delete from tbluser where ID ='$sid'");
 echo "<script>alert('Data Deleted');</script>";
 echo "<script>window.location.href='unreadenq.php'</script>";
           }
-
   ?>
 <!DOCTYPE HTML>
 <html>
@@ -83,11 +82,10 @@ $cnt=$cnt+1;
 				</div>
 			</div>
 		</div>
-		<!--footer-->
+		
 		 <?php include_once('includes/footer.php');?>
-        <!--//footer-->
+      
 	</div>
-	<!-- Classie -->
 		<script src="js/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
