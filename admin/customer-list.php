@@ -12,12 +12,13 @@ mysqli_query($con,"delete from tbluser where ID ='$sid'");
 echo "<script>alert('Data Deleted');</script>";
 echo "<script>window.location.href='unreadenq.php'</script>";
           }
+
   ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Customer List</title>
-
+<title>Salon Ruusobha - Customer List</title>
+<link rel="icon" type="image/png" href="logo.png" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -82,10 +83,11 @@ $cnt=$cnt+1;
 				</div>
 			</div>
 		</div>
-		
+		<!--footer-->
 		 <?php include_once('includes/footer.php');?>
-      
+        <!--//footer-->
 	</div>
+	<!-- Classie -->
 		<script src="js/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),

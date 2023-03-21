@@ -9,8 +9,8 @@ include('includes/dbconnection.php');
   <head>
     
 
-    <title>service Page </title>
-
+    <title>Salon Ruusobha - service Page </title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,700i&display=swap" rel="stylesheet">
@@ -68,8 +68,8 @@ $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 
 ?>
-                <div class="col-lg-4 col-md-4 col-sm-4 propClone">
-                 <img src="admin/images/<?php echo $row['Image']?>" alt="product" height="350" width="300" style="margin-top: 20px"class="">
+                <div class="col-lg-4 col-md-6 col-sm-6 propClone">
+                 <img src="admin/images/<?php echo $row['Image']?>" alt="product" height="200" width="300" class="">
                     <div class="about-grids ">
                         <hr>
                         <h5 class="para"><?php  echo $row['ServiceName'];?></h5>

@@ -17,8 +17,8 @@ echo "<script>window.location.href='rejected-appointment.php'</script>";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Rejected Appointment</title>
-
+<title>Salon Ruusobha - Rejected Appointment</title>
+<link rel="icon" type="image/png" href="logo.png" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />

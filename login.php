@@ -24,8 +24,8 @@ if(isset($_POST['login']))
   <head>
  
 
-    <title> Login</title>
-
+    <title>Salon Ruusobha - Login</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,700i&display=swap" rel="stylesheet">

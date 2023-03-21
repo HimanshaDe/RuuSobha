@@ -30,8 +30,8 @@ $timing=$_POST['timing'];
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Contact Us</title>
-
+<title>Salon Ruusobha -Contact Us</title>
+<link rel="icon" type="image/png" href="logo.png" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />

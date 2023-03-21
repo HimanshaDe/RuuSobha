@@ -14,8 +14,8 @@ if (strlen($_SESSION['bpmsuid']==0)) {
   <head>
  
 
-    <title>Beauty Parlour Management System | Thank You page</title>
-
+    <title>Salon Ruusobha  | Thank You page</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,700i&display=swap" rel="stylesheet">

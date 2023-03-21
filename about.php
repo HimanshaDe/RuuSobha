@@ -7,8 +7,8 @@ include('includes/dbconnection.php');
 <html lang="en">
   <head>
     
-    <title> About us Page</title>
-
+    <title> Salon Ruusobha - About us Page</title>
+    <link rel="icon" type="image/png" href="logo.png" />
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,700i&display=swap" rel="stylesheet">
