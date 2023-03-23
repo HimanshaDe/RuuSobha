@@ -21,7 +21,8 @@ if(isset($_POST['submit']))
 $ret=mysqli_query($con,"select AptNumber from tblbook where tblbook.UserID='$uid' order by ID desc limit 1;");
 $result=mysqli_fetch_array($ret);
 $_SESSION['aptno']=$result['AptNumber'];
- echo "<script>window.location.href='thank-you.php'</script>";  
+ 
+$_SESSION['status'] = "Your appointment request was sent successfully!";
   }
   else
     {
@@ -135,7 +136,21 @@ while ($row=mysqli_fetch_array($ret)) {
                             <p class="para"> <?php  echo $row['Timing'];?></p>
                         </div>
                     </div>
-               <?php } ?> </div>
+                    <?php } ?> </div>
+                <div class="map-content-9 mt-lg-0 mt-4">
+                <?php 
+                        if(isset($_SESSION['status'])){
+                      ?>
+                      
+                      <div class="alert alert-success" role="alert">
+                            <?php  echo $_SESSION['status']; ?>
+                    </div>
+                      <?php
+                          
+                            unset($_SESSION['status']);
+                        }
+                        
+                        ?>
                 <div class="map-content-9 mt-lg-0 mt-4">
                     <form method="post">
                         <div style="padding-top: 30px;">

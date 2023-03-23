@@ -21,8 +21,8 @@ echo "<script>alert('This email or Contact Number already associated with anothe
     else{
     $query=mysqli_query($con, "insert into tbluser(FirstName, LastName, MobileNumber, Email, Password) value('$fname', '$lname','$contno', '$email', '$password' )");
     if ($query) {
-    
-    echo "<script>alert('You have successfully registered.');</script>";
+        $_SESSION['status'] = "You have successfully registered!";
+   
   }
   else
     {
@@ -147,7 +147,21 @@ while ($row=mysqli_fetch_array($ret)) {
                             <p class="para"> <?php  echo $row['Timing'];?></p>
                         </div>
                     </div>
-               <?php } ?> </div>
+                    <?php } ?> </div>
+                <div class="map-content-9 mt-lg-0 mt-4">
+                <?php 
+                        if(isset($_SESSION['status'])){
+                      ?>
+                      
+                      <div class="alert alert-success" role="alert">
+                            <?php  echo $_SESSION['status']; ?>
+                    </div>
+                      <?php
+                          
+                            unset($_SESSION['status']);
+                        }
+                        
+                        ?>
                 <div class="map-content-9 mt-lg-0 mt-4">
                     <h3>Register with us!!</h3>
                     <form method="post" name="signup" onsubmit="return checkpass();">

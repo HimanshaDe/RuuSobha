@@ -49,12 +49,12 @@
               <!-- //nav-second-level -->
             </li>
            
-<!--         
+        
            <li>
-              <a href="readenq.php"><i class="fa fa-check-square-o nav_icon"></i>Enquiry<span class="fa arrow"></span></a>
+              <!-- <a href="readenq.php"><i class="fa fa-check-square-o nav_icon"></i>Enquiry<span class="fa arrow"></span></a> -->
               <ul class="nav nav-second-level collapse">
                 <li><a href="readenq.php">Read Enquiry</a></li>
-        <li><a href="unreadenq.php">Unread Enquiry</a></li> -->
+        <li><a href="unreadenq.php">Unread Enquiry</a></li>
                
               </ul>
               <!-- //nav-second-level -->
@@ -72,9 +72,9 @@
               <!-- //nav-second-level -->
             </li>
 
-    <!-- <li>
-              <a href="invoices.php" class="chart-nav"><i class="fa fa-file-text-o nav_icon"></i>Invoices</a>
-            </li> -->
+    <li>
+              <!-- <a href="invoices.php" class="chart-nav"><i class="fa fa-file-text-o nav_icon"></i>Invoices</a> -->
+            </li>
             <li>
               <a href="search-appointment.php" class="chart-nav"><i class="fa fa-search nav_icon"></i>Search Appointment</a>
             </li>

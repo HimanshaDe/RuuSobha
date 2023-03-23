@@ -14,8 +14,9 @@ if(isset($_POST['submit']))
      
     $query=mysqli_query($con, "insert into tblcontact(FirstName,LastName,Phone,Email,Message) value('$fname','$lname','$phone','$email','$message')");
     if ($query) {
-   echo "<script>alert('Your message was sent successfully!.');</script>";
-echo "<script>window.location.href ='contact.php'</script>";
+
+        $_SESSION['status'] = "Your message was sent successfully!";
+        
   }
   else
     {
@@ -130,6 +131,19 @@ while ($row=mysqli_fetch_array($ret)) {
                     </div>
                <?php } ?> </div>
                 <div class="map-content-9 mt-lg-0 mt-4">
+                <?php 
+                        if(isset($_SESSION['status'])){
+                      ?>
+                      
+                      <div class="alert alert-success" role="alert">
+                            <?php  echo $_SESSION['status']; ?>
+                    </div>
+                      <?php
+                          
+                            unset($_SESSION['status']);
+                        }
+                        
+                        ?>
                     <form method="post">
                         <div class="twice-two">
                             <input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required="">
@@ -142,8 +156,13 @@ while ($row=mysqli_fetch_array($ret)) {
                         
                         <textarea class="form-control" id="message" name="message" placeholder="Message" required=""></textarea>
                         <button type="submit" class="btn btn-contact" name="submit">Send Message</button>
+
+
+                       
                     </form>
+                  
                 </div>
+               
     </div>
    
     </div></div>

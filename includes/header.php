@@ -10,12 +10,12 @@
     <section class=" w3l-header-4 header-sticky">
     <header class="absolute-top">
    
-        <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light"  style="padding-top: 20px;">
         <div class="" style="display:flex">
     
     </div>  
-    <img src="assets/images/logo.png" style="width:75px; margin-right: 30px;" alt="product" class="img-responsive ">
+    <img src="assets/images/logo.png" style="width:75px; margin-right: 30px; margin-left:60px;" alt="product" class="img-responsive ">
         <h1><a class="navbar-brand" href="index.php"> <!--<span class="fa fa-line-chart" aria-hidden="true"></span> -->
                Salon RuuSobha
             </a></h1>
@@ -60,9 +60,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="booking-history.php">Booking History</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="invoice-history.php">Invoice History</a>
-                    </li>
+                    </li> -->
                                         <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>
